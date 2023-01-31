@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>hello</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <img src="boredApe01b.jpeg" alt="DFINITY logo" />
+      <br />
+      <br />
+      <form action="#">
+        <label for="name-enter-nftid">Enter NFT_ID: &nbsp;</label>
+        <input id="nft_id" alt="nft_id" type="number" step="1" min=0 value="" />
+        <button id="get-metadata" type="submit">Get NFT Metadata &nbsp;</button>
+
+        <label for="name-mint-nft">Mint & Check NFT: &nbsp;</label>
+        <input id="nft_to" alt="nft_to" type="text" value="hvnpv-7tz4x-urwpp-mtaw3-75xzo-v5mwr-b43ba-qgrtn-pc4kv-zy2dg-tqe"/>
+        <input id="nft_metadata" alt="nft_metadata" type="text" value="nft_name:Donkey" />
+        <button id="mint-nft" type="submit">Mint NFT</button>
+        <button id="show-nft-balance" type="submit">Show NFT balance at address</button>
+      </form>
+      <section id="metadata"></section>
+      <section id="metadata-two"></section>
+    </main>
+  </body>
+</html>

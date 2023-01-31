@@ -1,0 +1,34 @@
+{
+  "canisters": {
+    "dip721_nft_container": {
+      "candid": "src/dip721_nft_container/dip721-nft-container.did",
+      "package": "dip721_nft_container",
+      "type": "rust"
+    },
+    "hello": {
+      "candid": "src/hello/hello.did",
+      "package": "hello",
+      "type": "rust"
+    },
+    "hello_frontend": {
+      "dependencies": [
+        "dip721_nft_container"
+      ],
+      "frontend": {
+        "entrypoint": "src/hello_frontend/src/index.html"
+      },
+      "source": [
+        "src/hello_frontend/assets",
+        "dist/hello_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}

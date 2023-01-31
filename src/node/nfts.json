@@ -1,0 +1,11 @@
+[
+  {
+    "asset": "boredApe01d.jpeg",
+    "metadata": [
+      {
+        "collection": "collectionName",
+        "sampleKey": "sampleKeyValue"
+      }
+    ]
+  }
+]

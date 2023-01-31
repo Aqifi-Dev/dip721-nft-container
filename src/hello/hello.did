@@ -1,0 +1,24 @@
+type InitArgs = record {
+    custodians : opt vec principal;
+    name : text;
+    price : nat64;
+};
+type ApiError = variant {
+    Unauthorized;
+    InvalidTokenId;
+    ZeroAddress;
+    Other;
+    ZeroValue;
+    EmptyString;
+};
+type ManageResult = variant {
+    Ok : nat64;
+    Err : ApiError;
+};
+service : (InitArgs) -> {
+    greet: (text) -> (text) query;
+    get_name : () -> (text) query;
+    get_price : () -> (nat64) query;
+    set_name : (name : text) -> (ManageResult);
+    set_price : (num : nat64) -> (ManageResult);
+}

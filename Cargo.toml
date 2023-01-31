@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/dip721_nft_container",
+    "src/hello",
+]
