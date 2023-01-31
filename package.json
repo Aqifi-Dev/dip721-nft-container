@@ -43,7 +43,7 @@
     "d7": "./bashscript.sh getBalances local",
     "d8": "./bashscript.sh transfer local",
     "d9": "./bashscript.sh approve local",
-    "d90": "./bashscript.sh setcycles ic 1",
+    "once-on-ic": "./bashscript.sh makeWalletCanister ic 10",
     "d91": "./bashscript.sh deployHello ic",
     "d92": "./bashscript.sh deployDip721 ic",
     "d93": "./bashscript.sh deployHelloFrontend ic",

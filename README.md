@@ -7,7 +7,7 @@
 [Note] adding node_compatibility in dfx.json WILL disable the hello_frontend in the building process!
 
 - npm run d01: check Rust code
-- npm run d02: use admin identity
+- npm run d02: use admin identity. This is MUST!
 - npm run d0: start dfx environment
 - npm run d1: deploy hello canister
 - npm run d2: deploy dip721_nft_container canister
@@ -20,11 +20,23 @@
 - npm run d6s: use admin identity to set NFT id = 0 metadata
 - npm run d6a: use john identity to mint one NFT
 - npm run d6ag: get metadata of NFT id = 1
+
+Optional tests:
+
 - npm run d7: get balances of admin, alice, bob
 - npm run d8: transfer one NFT from admin to Alice
 - npm run d9: approveDip721, setApprovalForAllDip721
 
 - npm run d12 : call a NodeJs script to invoke minting
+- npm run dstop : terminate the local dfx environment
+
+## UI Explanation
+
+The "Get NFT Metadata" button takes "Enter NFT_ID" input field, and try to find the metadata for that id, assuming that id exists.
+
+The "Show NFT balances at address" button takes the address and metadata input fields above it to mint a new NFT to that address(or principal identifier)
+
+## Conclusions
 
 Conclusion1: dfinity does not have good or updated support for Rust code, so it cannot auto generate DID files, which are required to generate JavaScript interface files for NodeJs script. That is causing minting from NodeJs difficult.
 
